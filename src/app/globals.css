@@ -1,0 +1,64 @@
+:root {
+  --color-content: black;
+  --color-background: white;
+  --color-semantic-error: red;
+  --color-semantic-warning: orange;
+
+  --base-size-unit: 4px;
+  --size1: var(--base-size-unit);
+  --size2: calc(2 * var(--base-size-unit));
+  --size3: calc(3 * var(--base-size-unit));
+  --size4: calc(4 * var(--base-size-unit));
+  --size5: calc(5 * var(--base-size-unit));
+  --size6: calc(6 * var(--base-size-unit));
+  --size7: calc(7 * var(--base-size-unit));
+  --size8: calc(8 * var(--base-size-unit));
+  --size9: calc(9 * var(--base-size-unit));
+  --size10: calc(10 * var(--base-size-unit));
+
+  --font-size-xs: 10px;
+  --font-size-s: 12px;
+  --font-size-m: 16px;
+  --font-size-l: 20px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.module__container {
+  padding: var(--size5);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.exercise__container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExerciseErrorMessage should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container exercise-error-message__container"
+  >
+    Test Error Message. Default limits are being used.
+  </div>
+</DocumentFragment>
+`;

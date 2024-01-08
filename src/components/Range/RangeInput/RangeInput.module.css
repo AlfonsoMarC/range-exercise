@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: var(--size5);
+  width: 80px;
+  gap: 2px;
+}
+
+.textInputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.textInput {
+  display: flex;
+  border: none;
+  outline: none;
+  text-align: right;
+  height: 100%;
+  width: 60px;
+  padding: 0;
+  font-size: var(--font-size-m);
+  color: var(--color-content);
+  background-color: var(--color-background);
+}
+
+.inputLabel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 60px;
+  font-size: var(--font-size-m);
+  color: var(--color-content);
+}
+
+.unitLabel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  font-size: var(--font-size-m);
+  color: var(--color-content);
+}
+
+.inputError {
+  position: absolute;
+  top: var(--size5);
+  font-size: var(--font-size-xs);
+  color: var(--color-semantic-error);
+}
+
+.textInputContainer.hidden {
+  display: none;
+}
+
+.inputLabel.hidden {
+  display: none;
+}

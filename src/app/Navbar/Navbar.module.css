@@ -1,0 +1,15 @@
+.linkList {
+  display: flex;
+  margin: 0;
+  padding: var(--size5);
+  gap: var(--size4);
+}
+
+.link {
+  color: var(--color-content);
+  font-size: var(--font-size-l);
+}
+
+.active {
+  text-decoration: underline;
+}

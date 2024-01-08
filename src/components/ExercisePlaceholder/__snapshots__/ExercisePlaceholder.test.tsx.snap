@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExercisePlaceholder should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container exercise-placeholder__container"
+  >
+    Test Placeholder Message
+  </div>
+</DocumentFragment>
+`;

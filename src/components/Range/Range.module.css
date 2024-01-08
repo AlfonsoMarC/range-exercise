@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  gap: var(--size5);
+  padding: var(--size10) var(--size4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+  max-width: 580px;
+}
+
+.sliderTrack {
+  display: flex;
+  flex: 1;
+  height: var(--size1);
+  border-radius: 2px;
+  position: relative;
+  background: var(--color-content);
+  cursor: pointer;
+}
+
+.bullet {
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background: var(--color-content);
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.bullet.dragging {
+  height: 14px;
+  width: 14px;
+}
+
+.draggingSurface {
+  cursor: grabbing;
+}
+
+.bulletUp {
+  z-index: 99;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bullet:not(.disabled):hover {
+    height: 14px;
+    width: 14px;
+    cursor: grab;
+  }
+  .bullet.dragging:hover {
+    cursor: grabbing;
+  }
+}
